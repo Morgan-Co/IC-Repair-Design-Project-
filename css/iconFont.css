@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?rlxuo9');
+  src: url('../fonts/icomoon.eot?rlxuo9#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?rlxuo9') format('truetype'),
+    url('../fonts/icomoon.woff?rlxuo9') format('woff'),
+    url('../fonts/icomoon.svg?rlxuo9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-checkMark:before {
+  content: "\e90e";
+}
+
+.icon-arLeft:before {
+  content: "\e900";
+}
+
+.icon-arLeftAdp:before {
+  content: "\e901";
+}
+
+.icon-arRight:before {
+  content: "\e902";
+}
+
+.icon-arRightAdp:before {
+  content: "\e903";
+}
+
+.icon-Cam:before {
+  content: "\e904";
+}
+
+.icon-Email:before {
+  content: "\e905";
+}
+
+.icon-Hands:before {
+  content: "\e906";
+}
+
+.icon-Inst:before {
+  content: "\e907";
+}
+
+.icon-List:before {
+  content: "\e908";
+}
+
+.icon-Pig:before {
+  content: "\e909";
+}
+
+.icon-Play:before {
+  content: "\e90a";
+}
+
+.icon-Point:before {
+  content: "\e90b";
+}
+
+.icon-Size:before {
+  content: "\e90c";
+}
+
+.icon-Tools:before {
+  content: "\e90d";
+}

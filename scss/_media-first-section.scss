@@ -1,0 +1,29 @@
+@media screen and (max-width: 468px) {
+    .first-section {
+
+        &__content {
+            margin: 85px 0 0 0px;
+        }
+
+        &__title {
+            font-size: 23px;
+            line-height: 132.83%;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 135.84%;
+
+            max-width: 339px;
+        }
+
+        &__btns {
+            display: block;
+
+            button {
+                width: 100%;
+                margin: 0 0 26px 0;
+            }
+        }
+    }
+}

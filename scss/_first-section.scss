@@ -1,0 +1,139 @@
+.main {
+    // background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+
+.first-section {
+    display: flex;
+    justify-content: center;
+
+    height: 707px;
+
+    background: rgba(0, 0, 0, 0.7) url(../src/img/image1.jpg) center center / cover no-repeat;
+    background-blend-mode: multiply;
+
+    &__content {
+        margin: 194px 0 0 0px;
+    }
+
+    &__title {
+        font-size: 40px;
+        line-height: 53px;
+
+        color: #FFFFFF;
+
+        max-width: 520px;
+
+        margin: 0 0 19px 0;
+
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all .8s ease 0s;
+
+        span {
+            color: #E3B873;
+        }
+
+        &._animate {
+            transform: translate(0px, 0px);
+            opacity: 1;
+        }
+    }
+
+    &__text {
+        font-size: 22px;
+        line-height: 36px;
+        color: #FFFFFF;
+
+        max-width: 520px;
+
+        margin: 0 0 41px 0;
+
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all .8s ease 0s;
+
+        &._animate {
+            transform: translate(0px, 0px);
+            opacity: 1;
+            transition: all .8s ease .4s;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+
+        max-width: 434px;
+    }
+
+    &__button-1 {
+        font-weight: 400;
+        border-radius: 2px;
+        font-family: 'Nunito Sans';
+        font-style: italic;
+        font-size: 11px;
+        line-height: 15px;
+        cursor: pointer;
+
+        color: #FFFFFF;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+        border: 1px solid #E3B873;
+        background: linear-gradient(45deg, #E3B873 50%, transparent 50%) 0 0 / 230% no-repeat;
+        color: #FFFFFF;
+
+        width: 207px;
+        height: 51px;
+
+        transition: background-position .4s ease 0s, transform .8s ease 0s;
+
+        transform: translate(-50%, 0px);
+        opacity: 0;
+
+        &:hover {
+            background-position: right;
+        }
+
+        &._animate {
+            transform: translate(0px, 0px);
+            opacity: 1;
+
+            transition: transform .8s ease .4s, opacity .8s ease .4s, background-position .4s ease 0s;
+        }
+    }
+
+    &__button-2 {
+        font-weight: 400;
+        border-radius: 2px;
+        font-family: 'Nunito Sans';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 15px;
+        cursor: pointer;
+
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        background: linear-gradient(45deg, transparent 50%, #E3B873 50%) 0 0 / 230% no-repeat;
+        color: #FFFFFF;
+        width: 207px;
+        height: 51px;
+
+        transition: background-position .4s ease 0s, transform .8s ease 0s;
+
+        transform: translate(50%, 0px);
+        opacity: 0;
+
+        &:hover {
+            background-position: right;
+        }
+
+        &._animate {
+            transform: translate(0px, 0px);
+            opacity: 1;
+
+            transition: transform .8s ease .4s, opacity .8s ease .4s, background-position .4s ease 0s;
+        }
+    }
+}

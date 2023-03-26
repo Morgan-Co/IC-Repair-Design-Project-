@@ -1,0 +1,73 @@
+@media screen and (max-width: 1164px) {
+    .seventh-section {
+
+        &__content {}
+    
+        &__top {}
+    
+        &__title {}
+    
+        &__text {}
+    
+        &__bottom {}
+    
+        &__items {
+            justify-content: center;
+        }
+    }
+    
+    .seventh-container {}
+    
+    .container {}
+    
+    .title {}
+    
+    .fourth-section {
+    
+        &__icon {}
+    }
+    
+    .icon-Hands {
+    
+        &__before {}
+    
+        &__after {}
+    }
+    
+    .text {}
+    
+    .seventh-section-item {
+        margin: 0 0 30px 0 ;
+    
+        &__top {}
+    
+        &__img {}
+    
+        &__title {}
+    
+        &__center {}
+    
+        &__text {}
+    
+        &__bottom {}
+    }
+    
+    .seventh-section-item-button {
+    
+        &__title {}
+    }
+    
+    .seventh-btn-1 {}
+    
+    .icon-Size {}
+    
+    .seventh-btn-2 {}
+    
+    .icon-List {}
+}
+
+@media screen and (max-width: 500px) {
+    .seventh-section {
+        display: none;
+    }
+}

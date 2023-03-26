@@ -1,0 +1,151 @@
+@media screen and (max-width: 1000px) {
+    .second-section {
+        height: 1250px;
+
+        padding: 36px 0 0 0;
+
+        &__content {
+            flex-direction: column;
+            align-items: center;
+            margin: 0 18px;
+        }
+
+        &__left {
+            margin: 0;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+            max-width: 100%;
+            text-align: center;
+
+            margin: 0 0 22px 0;
+        }
+
+        &__text {
+            text-align: center;
+
+            margin: 0 0 36px 0;
+        }
+
+        &__right {
+            max-width: 100%;
+        }
+
+        &__swiper {
+            margin: 0 0 36.65px 0;
+            width: 100%;
+            position: relative;
+
+
+            .swiper-slide {
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .append-buttons {
+                display: none;
+            }
+        }
+    }
+
+    .second-section-info {
+        column-gap: 34px;
+        row-gap: 27px;
+    }
+
+    .second-section-info-item {
+
+        &__title {
+            margin: 0 0 11px 0;
+        }
+    }
+
+    .s-button-prev,
+    .s-button-next {
+        position: absolute;
+        z-index: 2;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+    }
+
+    .s-button-prev {
+        background: #E3B873 url(../src/icons/arLeftAdp.svg) center center / auto no-repeat;
+        top: 50%;
+        left: 14px;
+
+    }
+
+    .s-button-next {
+        background: #E3B873 url(../src/icons/arRightAdp.svg) center center / auto no-repeat;
+        top: 50%;
+        right: 14px;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 468px) {
+    .second-section {
+        &__title {
+            max-width: 200px;
+            font-size: 22px;
+            line-height: 138.6%;
+        }
+
+        &__text {
+            max-width: 311px;
+            font-size: 11px;
+            line-height: 158.48%;
+        }
+
+        &__swiper {
+            .swiper-wrapper {
+                height: 312px;
+            }
+
+            .swiper-slide {
+                img {
+                    height: 312px;
+                }
+            }
+        }
+    }
+
+    .second-section-info-item {
+
+        &__title {
+            font-size: 14px;
+            line-height: 138.6%;
+        }
+
+        &__text {
+            font-size: 11px;
+            line-height: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .swiper {
+        .swiper-wrapper {
+            height: 241.35px;
+            width: 340px;
+        }
+
+        .swiper-slide {
+            img {
+                height: 241.35px;
+                width: 340px;
+            }
+        }
+    }
+}

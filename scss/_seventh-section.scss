@@ -1,0 +1,228 @@
+.seventh-section {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 354.65px 0;
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 0 0 63px 0;
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 28px;
+
+        color: #181818;
+
+        margin: 0 0 13.4px 0;
+
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all .8s ease 0s;
+
+        &._animate {
+            transform: translate(0px, 0px);
+            opacity: 1;
+        }
+    }
+
+    &__icon {
+        margin: 0 0 13.4px 0;
+        display: flex;
+        align-items: center;
+
+        .icon-Hands {
+            font-size: 30px;
+            color: #E3B873;
+        
+            margin: 9px 8.14px 0 8.14px;
+
+            transform: translate(0px, 120%);
+            opacity: 0;
+            transition: all .8s ease 0s;
+
+            &._animate {
+                transform: translate(0px, 0px);
+                opacity: 1;
+            }
+        
+            &__before {
+                width: 32px;
+                height: 1.54px;
+                background-color: #E3B873;
+
+                transform: translate(-120%, 0px);
+                opacity: 0;
+                transition: all .8s ease 0s;
+
+                &._animate {
+                    transform: translate(0px, 0px);
+                    opacity: 1;
+                    transition: all .8s ease .4s;
+                }
+            }
+        
+            &__after {
+                width: 32px;
+                height: 1.54px;
+                background-color: #E3B873;
+
+                transform: translate(120%, 0px);
+                opacity: 0;
+                transition: all .8s ease 0s;
+
+                &._animate {
+                    transform: translate(0px, 0px);
+                    opacity: 1;
+                    transition: all .8s ease .4s;
+                }
+            }
+        }
+    }
+
+    &__text {
+        max-width: 330px;
+        text-align: center;
+
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all .8s ease 0s;
+
+        &._animate {
+            transform: translate(0px, 0px);
+            opacity: 1;
+            transition: all .8s ease .4s;
+        }
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.seventh-section-item {
+    display: flex;
+    flex-direction: column;
+    width: 376px;
+    height: 455.03px;
+
+    transform: scale(0);
+    opacity: 0;
+    transition: all .8s ease 0s;
+
+    &._animate {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+
+        margin: 0 0 22px 0;
+    }
+
+    &__img {
+        margin: 0 23px 0 0;
+
+        img {
+            border-radius: 50%;
+        }
+
+    }
+
+    &__title {
+        font-family: 'Yeseva One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+
+        color: #181818;
+
+        max-width: 178px;
+    }
+
+    &__center {
+        margin: 0 0 53px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__text {
+        font-size: 13px;
+        line-height: 180%;
+
+        color: #959595;
+
+        max-width: 324.08px;
+
+        p {
+            margin: 0 0 10px;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        // justify-content: space-between;
+
+        button {
+            height: 54px;
+            color: #FFFFFF;
+            background: linear-gradient(45deg, #E3B873 50%, transparent 50%) 0 0 / 240% no-repeat;
+            border: 1px solid #E3B873;
+            box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+
+            cursor: pointer;
+
+            transition: background-position .4s ease 0s, transform .8s ease 0s, color .4s ease 0s;
+
+            &:hover {
+                background-position: right;
+                color: #E3B873;
+            }
+
+            span {
+                margin: 0 15.39px 0 0;
+            }
+        }
+
+        .seventh-btn-1 {
+            max-width: 135.09px;
+            width: 100%;
+
+            border-right: 1px solid #FFFFFF;
+        }
+
+        .seventh-btn-2 {
+            max-width: 158.66px;
+            width: 100%;
+        }
+    }
+}
+
+.seventh-section-item-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+        font-size: 17px;
+        line-height: 24px;
+    }
+}
+
+.icon-Size {
+    font-size: 35px;
+    align-self: end;
+}
+
+.icon-List {
+    font-size: 35px;
+    align-self: end;
+}

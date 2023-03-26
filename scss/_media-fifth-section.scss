@@ -1,0 +1,40 @@
+@media screen and (max-width: 940px) {
+    .fifth-section {
+
+        &__content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__right {
+            width: 100%;
+        }
+    }
+
+    .fifth-section-form {
+        width: 100%;
+
+
+        form {
+            display: grid;
+            grid-template-rows: minmax(10px, 81px) minmax(10px, 81px) minmax(10px, 80px) minmax(1px, 18px);
+        }
+
+        &__content {
+            max-width: 100%;
+
+            margin: 0 18px;
+        }
+
+        &__title {
+            max-width: 285px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .fifth-section {
+        display: none;
+
+    }
+}

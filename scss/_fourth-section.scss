@@ -1,0 +1,191 @@
+.fourth-section {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 200px 0;
+
+    &__title {
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+
+        color: #181818;
+
+        margin: 0 0 13px 0;
+
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all .8s ease 0s;
+
+        &._animate {
+            transform: translate(0px, 0px);
+            opacity: 1;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icon-Tools {
+            font-size: 30px;
+            color: #E3B873;
+
+            margin: 0 13px 0 9px;
+
+            transform: translate(0px, 120%);
+            opacity: 0;
+            transition: all .8s ease 0s;
+
+            &._animate {
+                transform: translate(0px, 0px);
+                opacity: 1;
+            }
+
+            &__before {
+                width: 32px;
+                height: 1.54px;
+                background-color: #E3B873;
+
+                transform: translate(-120%, 0px);
+                opacity: 0;
+                transition: all .8s ease 0s;
+
+                &._animate {
+                    transform: translate(0px, 0px);
+                    opacity: 1;
+                    transition: all .8s ease .4s;
+                }
+            }
+
+            &__after {
+                width: 32px;
+                height: 1.54px;
+                background-color: #E3B873;
+
+                transform: translate(120%, 0px);
+                opacity: 0;
+                transition: all .8s ease 0s;
+
+                &._animate {
+                    transform: translate(0px, 0px);
+                    opacity: 1;
+                    transition: all .8s ease .4s;
+                }
+            }
+        }
+    }
+
+    &__items {
+        margin: 31px 0 0 0;
+
+        display: flex;
+        justify-content: space-between;
+
+        flex-wrap: wrap;
+
+    }
+}
+
+.fourth-section-item {
+    max-width: 392px;
+    width: 100%;
+    position: relative;
+    height: 608px;
+
+    margin: 0 20px 59px 0;
+
+    transform: scale(0);
+    opacity: 0;
+    transition: all .8s ease 0s;
+
+    &._animate {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    &__img {
+        width: 100%;
+        padding: 0 0 421px 0;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: scale-down;
+            height: 421px;
+            width: 100%;
+        }
+    }
+
+    &__info {
+        background-color: #fff;
+        top: 50%;
+        left: 8%;
+        position: absolute;
+        z-index: 2;
+
+        max-width: 330px;
+        width: 100%;
+    }
+}
+
+.fourth-section-item-title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #363636;
+
+    margin: 25px 0 13px 34px;
+}
+
+.fourth-section-item-list {
+    margin: 0 0 23px 34px;
+
+    ul {
+        list-style: inside;
+    }
+
+    &__li {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 27px;
+
+        color: #959595;
+    }
+}
+
+.fourth-section-item-button {
+    button {
+        font-family: 'Yeseva One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+        border: none;
+
+        width: 100%;
+        max-width: 228px;
+        height: 54px;
+
+        color: #FFFFFF;
+        background: linear-gradient(45deg, #E3B873 50%, transparent 50%) 0 0 / 230% no-repeat;
+        border: 1px solid #E3B873;
+        box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+
+        cursor: pointer;
+
+        transition: background-position .4s ease 0s, transform .8s ease 0s, color .4s ease 0s;
+
+        &:hover {
+            background-position: right;
+            color: #E3B873;
+        }
+    }
+}
